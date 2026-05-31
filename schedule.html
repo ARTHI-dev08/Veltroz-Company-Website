@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedule Call - Veltroz</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:20px;
+
+            background:
+            linear-gradient(
+                135deg,
+                #0f172a 0%,
+                #1e293b 45%,
+                #2563eb 100%
+            );
+        }
+
+        .schedule-container{
+            width:100%;
+            max-width:650px;
+
+            background:rgba(255,255,255,0.10);
+
+            backdrop-filter:blur(15px);
+
+            border:1px solid rgba(255,255,255,0.15);
+
+            border-radius:22px;
+
+            padding:40px;
+
+            box-shadow:
+            0 20px 50px rgba(0,0,0,0.25);
+        }
+
+        .back-home{
+            display:inline-block;
+            color:white;
+            text-decoration:none;
+            margin-bottom:20px;
+            font-size:14px;
+        }
+
+        .back-home:hover{
+            opacity:0.8;
+        }
+
+        .brand{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .brand h1{
+            color:white;
+            font-size:2rem;
+            margin-bottom:8px;
+        }
+
+        .brand p{
+            color:rgba(255,255,255,0.75);
+            font-size:14px;
+        }
+
+        .form-title{
+            text-align:center;
+            color:white;
+            margin-bottom:25px;
+            font-size:1.7rem;
+        }
+
+        .form-subtitle{
+            text-align:center;
+            color:rgba(255,255,255,0.7);
+            margin-bottom:30px;
+            line-height:1.5;
+        }
+
+        input,
+        textarea{
+            width:100%;
+            padding:14px;
+            margin-bottom:16px;
+
+            border-radius:10px;
+
+            border:1px solid rgba(255,255,255,0.2);
+
+            background:rgba(255,255,255,0.08);
+
+            color:white;
+
+            outline:none;
+
+            font-size:15px;
+        }
+
+        textarea{
+            resize:vertical;
+            min-height:120px;
+        }
+
+        input::placeholder,
+        textarea::placeholder{
+            color:rgba(255,255,255,0.6);
+        }
+
+        input:focus,
+        textarea:focus{
+            border-color:#60a5fa;
+        }
+
+        button{
+            width:100%;
+            padding:15px;
+
+            border:none;
+
+            border-radius:10px;
+
+            background:#2563eb;
+
+            color:white;
+
+            font-size:16px;
+
+            font-weight:600;
+
+            cursor:pointer;
+
+            transition:0.3s;
+        }
+
+        button:hover{
+            background:#1d4ed8;
+            transform:translateY(-2px);
+        }
+
+        .note{
+            margin-top:18px;
+            text-align:center;
+            color:rgba(255,255,255,0.65);
+            font-size:13px;
+        }
+
+        @media(max-width:768px){
+
+            .schedule-container{
+                padding:25px;
+            }
+
+            .brand h1{
+                font-size:1.7rem;
+            }
+
+            .form-title{
+                font-size:1.4rem;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="schedule-container">
+
+    <a href="index.html" class="back-home">
+        ← Back to Home
+    </a>
+
+    <div class="brand">
+        <h1>Veltroz</h1>
+        <p>AI Solutions & Digital Innovation</p>
+    </div>
+
+    <h2 class="form-title">
+        Schedule a Discovery Call
+    </h2>
+
+    <p class="form-subtitle">
+        Tell us about your project and choose a preferred time.
+        Our team will review your request and get in touch.
+    </p>
+
+    <input
+        type="text"
+        id="name"
+        placeholder="Your Full Name"
+        required
+    >
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Your Email Address"
+        required
+    >
+
+    <input
+        type="tel"
+        id="phone"
+        placeholder="Phone Number"
+        required
+    >
+
+    <input
+        type="datetime-local"
+        id="time"
+        required
+    >
+
+    <textarea
+        id="message"
+        placeholder="Briefly describe your project, requirements, or meeting purpose"
+    ></textarea>
+
+    <button onclick="scheduleCall()">
+        Schedule Call
+    </button>
+
+    <p class="note">
+        Once submitted, our team will review the request and contact you via email.
+    </p>
+
+</div>
+
+<script src="js/schedule.js"></script>
+
+</body>
+
+</html>
+```
