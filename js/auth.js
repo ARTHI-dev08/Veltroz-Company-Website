@@ -176,7 +176,7 @@ async function signupUser() {
             '!'
         );
 
-        window.location.href = 'index.html';
+        window.location.href = './index.html';
 
     } catch (error) {
 
@@ -245,7 +245,7 @@ async function loginUser() {
             '!'
         );
 
-        window.location.href = 'index.html';
+        window.location.href = './index.html';
 
     } catch (error) {
 
@@ -269,7 +269,7 @@ function logoutUser() {
 
     clearAuth();
 
-    window.location.href = 'login.html';
+    window.location.href = './login.html';
 }
 
 // ======================================================
@@ -284,8 +284,8 @@ function redirectIfLoggedIn() {
         window.location.pathname.toLowerCase();
 
     const authPages = [
-        '/login.html',
-        '/signup.html'
+        './login.html',
+        './signup.html'
     ];
 
     if (
@@ -294,7 +294,7 @@ function redirectIfLoggedIn() {
             path.endsWith(authPage)
         )
     ) {
-        window.location.href = 'index.html';
+        window.location.href = './index.html';
     }
 }
 

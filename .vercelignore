@@ -8,6 +8,4 @@ backend/
 *.java
 *.properties
 *.pom
-build.html
-build1.html
 pages/

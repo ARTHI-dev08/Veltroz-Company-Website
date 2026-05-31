@@ -427,15 +427,15 @@ body {
     <!-- RIGHT -->
     <div class="nav-right">
         <a href="#">Home</a>
-<a href="index.html">Solution</a>
+<a href="./index.html">Solution</a>
         <a href="#">Product</a>
         <a href="#">About</a>
         <a href="#">Blogs</a>
-        <a href="login.html" class="login-btn">
+        <a href="./login.html" class="login-btn">
             Login
         </a>
     
-        <a href="signup.html" class="signup-btn">
+        <a href="./signup.html" class="signup-btn">
             Signup
         </a>
         <button class="pill-button">Schedule Call</button>
@@ -502,7 +502,7 @@ body {
 function openChatbot(){
 
     window.location.href =
-        "Ai chat frontend.html";
+        "./Ai chat frontend.html";
 }
 
 </script>
@@ -556,7 +556,7 @@ function changeLanguage(lang) {
 function openChatbot(){
 
     window.location.href =
-        "Ai chat frontend.html";
+        "./Ai chat frontend.html";
 }
 
 </script>
