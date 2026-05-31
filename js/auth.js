@@ -4,7 +4,7 @@
 // ======================================================
 
 // LOCAL DEVELOPMENT
-const LOCAL_API = 'http://localhost:8081/api';
+const LOCAL_API = 'https://veltroz-company-website.onrender.com';
 
 // PRODUCTION BACKEND URL
 // CHANGE THIS AFTER DEPLOYING YOUR BACKEND
