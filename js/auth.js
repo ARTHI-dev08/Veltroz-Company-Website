@@ -10,11 +10,8 @@ const LOCAL_API = 'http://localhost:8080';
 // CHANGE THIS AFTER DEPLOYING YOUR BACKEND
 const PROD_API = 'https://veltroz-company-website.onrender.com/api';
 
-const API_BASE =
-    window.location.hostname === 'localhost' ||
-    window.location.hostname === '127.0.0.1'
-        ? LOCAL_API
-        : PROD_API;
+const API_BASE ='https://veltroz-company-website.onrender.com'
+    
 
 // ======================================================
 // API HELPER
