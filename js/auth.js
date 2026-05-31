@@ -150,7 +150,7 @@ async function signupUser() {
         button.disabled = true;
         button.innerHTML = 'Creating Account...';
 
-        const response = await apiAuthFetch('/auth/register', {
+        const response = await apiAuthFetch('/register', {
 
             method: 'POST',
 
@@ -220,7 +220,7 @@ async function loginUser() {
 
         button.innerHTML = 'Logging In...';
 
-        const response = await apiAuthFetch('/auth/login', {
+        const response = await apiAuthFetch('/login', {
 
             method: 'POST',
 
