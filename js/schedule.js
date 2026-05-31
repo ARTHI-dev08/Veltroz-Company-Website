@@ -1,7 +1,4 @@
-const API_BASE =
-window.location.hostname === "localhost"
- ? "https://veltroz-company-website.onrender.com/api"
- : "https://veltroz-company-website.onrender.com/api";
+
 async function scheduleCall() {
 
     const data = {
